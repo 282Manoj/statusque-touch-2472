@@ -1,0 +1,23 @@
+.learnMore{
+    display: flex;
+    width:350px;
+    justify-content: space-between;
+    align-items: center;
+    /* border:1px solid rgb(189, 186, 186); */
+}
+.box{
+    border:1px solid rgb(193, 191, 191);
+    width:350px;
+    padding:20px;
+    border-radius: 8px;
+}
+.box:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;
+
+}
+.box>h2:hover{
+    color:red
+}
+.learnMore:hover{
+    color:red;
+}
