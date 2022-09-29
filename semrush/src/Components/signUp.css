@@ -1,0 +1,120 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    width:80%;
+    margin:auto;
+    margin-top: 100px;
+}
+.left{
+    width:30%;
+}
+
+.right{
+    width:40%;
+    background-color: #b880ff;
+    padding: 30px;
+    border-radius: 10px;
+}
+.googleSignIn{
+    display: flex;
+    align-items: center;
+    gap:60px;
+    border:1px solid gray;
+    padding:4px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color:dark gray;
+    font-size: 18px;
+}
+.hrline>p{
+    text-align: center;
+    margin:auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+.hrline>p::before{
+    content:"";
+    width:150px;
+    height:1px;
+    display: block;
+    background-color: gray;
+    position:absolute;
+    top:50%;
+    left:0;
+}
+.hrline>p::after{
+    content:"";
+    width:150px;
+    height:1px;
+    display: block;
+    background-color: gray;
+    position:absolute;
+    top:50%;
+    right:0;
+}
+
+.Email>input{
+    box-sizing: border-box;
+    width: 100%;
+    height:50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-top:5px;
+    margin-bottom:30px;
+    font-size: 18px;
+    outline: none;
+}
+label{
+    font-size:20px;
+}
+.password>input{
+    box-sizing: border-box;
+    width:100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-top:5px;
+    margin-bottom:30px;
+    font-size: 18px;
+    outline:none
+}
+.password>input:focus{
+    outline:2px solid skyblue;
+}
+.Email>input:focus{
+    outline: 2px solid skyblue;
+}
+.buttondiv>button{
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: rgb(212, 57, 18);
+    border: none;
+    border-radius: 4px;
+    color: white;
+   
+}
+.buttondiv>button:hover{
+background-color:rgb(103, 13, 13) ;
+    cursor: pointer;
+}
+.head>h2{
+    width:100%;
+    /* border:1px solid red; */
+    color:white;
+    align-content: center;
+    line-height: 40px;
+}
+.companyName{
+     display: flex;
+     justify-content: space-between; 
+     gap:10px;
+     align-items: center;
+    
+}
+
+.companyName>div>img{
+    width:100%;
+    background-color: transparent;
+}
