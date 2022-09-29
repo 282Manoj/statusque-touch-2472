@@ -4,10 +4,23 @@ import walmart from "../Image/walmart.png";
 import fobres from "../Image/forbes.png";
 import pg from "../Image/p&g.png";
 import tesla from "../Image/tesla.svg";
+import {useState} from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+   const navigate=useNavigate()
+    let obj=JSON.parse(localStorage.getItem("arr"))||{};
+    console.log("login",obj);
+  const [login,setLogin]=useState({email:"",password:""});
+   const handleLogin=()=>{
+    if(obj.email==login.email&&obj.password==login.password){
+        alert("login successful!")
+           navigate("/feature")
+    }
+   }
     return (
         <>
+        <div style={{height:"100vh"}}>
         <div style={{marginTop:"20px",marginLeft:"20px"}}>
             <img src="https://www.semrush.com/static/images/semrush-logo-small.65111a70bc78fa1d295b6cea65680c1d.svg" alt="photo" />
         </div>
@@ -29,16 +42,16 @@ const Login = () => {
                 <div className="Email">
                     <label>Email</label>
                     <br />
-                    <input type="text" />
+                    <input onChange={(e)=>setLogin({...login,email:e.target.value})} type="text" />
                 </div>
                 <div className="password">
                     <label htmlFor="">Password</label>
                     <br />
-                    <input type="text" />
+                    <input onChange={(e)=>setLogin({...login,password:e.target.value})} type="text" />
                 </div>
 
                 <div className="buttondiv">
-                    <button>Login</button>
+                    <button onClick={handleLogin}>Login</button>
                 </div>
                 <div style={{ marginTop: "20px" }}>
                     <span>Don't have semrush  account?</span>
@@ -52,6 +65,7 @@ const Login = () => {
                </div>
             </div>
 
+        </div>
         </div>
         </>
     );

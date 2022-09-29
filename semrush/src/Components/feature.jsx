@@ -1,5 +1,7 @@
 import "./feature.css"
 import Card from "./Card"
+import feature from "../Image/feature.PNG"
+import { Link } from "react-router-dom";
 let arr=[
     {title:"KeyWord Research",
     description:"Bring traffic to your site by finding the best keywords",
@@ -39,12 +41,12 @@ return(
             <button>Get started For Free</button>
         </div>
     </div>
-    <div className="right">
-        <img src="https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+    <div className="right1">
+        <img src={feature} alt="" />
     </div>
   </div>
 
-  <div className="main2" >
+  <div className="main10" >
     <h4>Choose your area of interest</h4>
     <div className="typeDiv">
         <p>All</p>
@@ -56,9 +58,9 @@ return(
     </div>
   </div>
 
-  <div className="grid-box">
+  <div className="grid-box1">
    {arr.map((el)=>{
-    return(<Card data={{...el}} />)
+    return<Card data={{...el}} />
    })}
   </div>
   </>

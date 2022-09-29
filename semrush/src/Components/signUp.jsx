@@ -4,10 +4,21 @@ import walmart from "../Image/walmart.png";
 import fobres from "../Image/forbes.png";
 import pg from "../Image/p&g.png";
 import tesla from "../Image/tesla.svg";
+import {useState} from "react";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+    const navigate=useNavigate()
+    const [detail,setDetail]=useState({email:"",password:""});
+    console.log(detail);
+    const handleDetail=()=>{
+    localStorage.setItem("arr",JSON.stringify(detail));
+    alert("Registration successful")
+    navigate("/login")
+    }
     return (
         <>
+    
         <div style={{marginTop:"20px",marginLeft:"20px"}}>
             <img src="https://www.semrush.com/static/images/semrush-logo-small.65111a70bc78fa1d295b6cea65680c1d.svg" alt="photo" />
         </div>
@@ -29,16 +40,16 @@ const SignUp = () => {
                 <div className="Email">
                     <label>Email</label>
                     <br />
-                    <input type="text" />
+                    <input onChange={(e)=>setDetail({...detail,email:e.target.value})} type="text" />
                 </div>
                 <div className="password">
                     <label htmlFor="">Password</label>
                     <br />
-                    <input type="text" />
+                    <input onChange={(e)=>setDetail({...detail,password:e.target.value})} type="text" />
                 </div>
 
                 <div className="buttondiv">
-                    <button>Create account</button>
+                    <button onClick={handleDetail}>Create account</button>
                 </div>
                 <div style={{ marginTop: "20px" }}>
                     <span>Already have an account?</span>

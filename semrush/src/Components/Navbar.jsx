@@ -1,6 +1,7 @@
 
 import { Button,} from "@chakra-ui/react";
 import {ChevronDownIcon} from"@chakra-ui/icons"
+import {Link} from "react-router-dom"
 import {
   Menu,
   MenuButton,
@@ -21,15 +22,15 @@ const Navbar = () => {
         <h3 style={{fontWeight:"bold", marginLeft:"5px"}}>SEMRUSH</h3>
       </div>
       <div className="menuItems">
-        <p>Features</p>
+       <Link style={{textDecoration:"none",color:"white"}} to="/feature"> <p>Features</p></Link>
         <p>Pricing</p>
         <p>
-          <Menu>
+          <Menu >
             <MenuButton  className="drop" borderWidth='0px' as={Button} rightIcon={<ChevronDownIcon />}>
               Resources
             </MenuButton>
-            <MenuList>
-              <MenuItem bgColor="black">Download</MenuItem>
+            <MenuList zIndex={2} >
+              <MenuItem  bgColor="black">Download</MenuItem>
               <MenuItem bgColor="black">Create a Copy</MenuItem>
               <MenuItem bgColor="black">Mark as Draft</MenuItem>
               <MenuItem bgColor="black">Delete</MenuItem>
@@ -42,7 +43,7 @@ const Navbar = () => {
             <MenuButton  className="drop" borderWidth='0px' as={Button} rightIcon={<ChevronDownIcon />}>
               Company
             </MenuButton>
-            <MenuList>
+            <MenuList zIndex={2}>
               <MenuItem bgColor="black">Download</MenuItem>
               <MenuItem bgColor="black">Create a Copy</MenuItem>
               <MenuItem bgColor="black">Mark as Draft</MenuItem>
@@ -56,7 +57,7 @@ const Navbar = () => {
             <MenuButton className="drop" borderWidth='0px' as={Button} rightIcon={<ChevronDownIcon />}>
               App Center
             </MenuButton>
-            <MenuList >
+            <MenuList zIndex={2}>
               <MenuItem bgColor="black">Download</MenuItem>
               <MenuItem bgColor="black">Create a Copy</MenuItem>
               <MenuItem bgColor="black">Mark as Draft</MenuItem>
@@ -69,12 +70,14 @@ const Navbar = () => {
             <MenuButton  className="drop"  borderWidth='0px' as={Button} rightIcon={<ChevronDownIcon />}>
               Extra tools
             </MenuButton>
-            <MenuList bgColor="black">
-              <MenuItem bgColor="black" >Create a Copy</MenuItem>
+            <MenuList zIndex={2}  w={200}  >
+              <MenuItem  mt={300} fontSize={20} bgColor="black" >Create a Copy</MenuItem>
               <MenuItem bgColor="black" >Mark as Draft</MenuItem>
               <MenuItem bgColor="black" >Delete</MenuItem>
               <MenuItem bgColor="black" >Download</MenuItem>
               <MenuItem bgColor="black" >Attend a Workshop</MenuItem>
+            <br />
+            <br />
             </MenuList>
           </Menu></p>
       </div>
@@ -92,8 +95,8 @@ const Navbar = () => {
               <MenuItem bgColor="black">Attend a Workshop</MenuItem>
             </MenuList>
           </Menu></p>
-        <button style={{ backgroundColor:"transparent",color:"white",padding:"6px 10px",border:"1px solid white",borderRadius:"4px",cursor:"pointer",fontSize:"18px"}}>Log In</button>
-        <button style={{ color:"black", backgroundColor:"#00BC98",padding:"6px 10px",border:"1px solid transparent",borderRadius:"8px",cursor:"pointer",fontSize:"18px"}}>Sign Up</button>
+        <Link to="/login"><button style={{ backgroundColor:"transparent",color:"white",padding:"6px 10px",border:"1px solid white",borderRadius:"4px",cursor:"pointer",fontSize:"18px"}}>Log In</button></Link>
+       <Link to="/signUp" ><button style={{ color:"black", backgroundColor:"#00BC98",padding:"6px 10px",border:"1px solid transparent",borderRadius:"8px",cursor:"pointer",fontSize:"18px"}}>Sign Up</button></Link> 
       </div>
     </div>
   );

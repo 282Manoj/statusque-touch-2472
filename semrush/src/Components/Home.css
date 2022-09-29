@@ -1,0 +1,42 @@
+.body{
+    background-color: #421983;
+    margin-top:-30px;
+    height:100vh;
+    position:relative;
+    
+}
+.home-head{
+    width:30%;
+    margin:auto;
+    color:white;
+    position: relative;
+    top:120px;
+}
+.home-head>h1{
+    font-size: 40px;
+
+}
+.home-head>p{
+    font-size: 18px;
+}
+.home-button{
+    width:40%;
+    margin:auto;
+    margin-top:150px;
+    /* border:1px solid red; */
+    display: flex;
+}
+.home-button>input{
+    width:700px;
+    height:45px;
+    margin-right:10px;
+    border:none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.home-button>button{
+    width:160px;
+    border:transparent;
+    border-radius: 10px;
+    background-color:#ff622D;
+}
