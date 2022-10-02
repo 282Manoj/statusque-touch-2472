@@ -71,7 +71,7 @@ const Navbar = () => {
               Extra tools
             </MenuButton>
             <MenuList zIndex={2}  w={200}  >
-              <MenuItem  mt={300} fontSize={20} bgColor="black" >Create a Copy</MenuItem>
+              <MenuItem bgColor="black" >Create a Copy</MenuItem>
               <MenuItem bgColor="black" >Mark as Draft</MenuItem>
               <MenuItem bgColor="black" >Delete</MenuItem>
               <MenuItem bgColor="black" >Download</MenuItem>

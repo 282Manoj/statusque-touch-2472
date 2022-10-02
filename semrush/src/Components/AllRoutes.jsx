@@ -1,9 +1,10 @@
 import {Routes,Route} from "react-router-dom";
 import Login from "./Login";
-import SignUp from "./SignUp"
+import SignUp from "./signUp"
 import Feature from "./feature"
 import AfterFeature from "./AfterFeature"
 import Home from "./Home";
+import Search from "./searchPage"
 function AllRoutes(){
     return<>
     <Routes>
@@ -12,6 +13,7 @@ function AllRoutes(){
         <Route path = "/login" element={<Login/>}></Route>
         <Route path = "/feature" element={<Feature/>}></Route>
         <Route path = "/afterfeature" element={<AfterFeature/>}></Route>
+        <Route path = "/search" element={<Search/>}></Route>
 
     </Routes>
     </>
