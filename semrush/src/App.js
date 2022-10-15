@@ -5,7 +5,6 @@ import Navbar from './Components/Navbar';
 // import Login from "./Components/Login";
 // import Feature from "./Components/feature";
 // import AfterFeature from "./Components/AfterFeature";
-import Search from './Components/searchPage';
 import Home from "./Components/Home";
 import AllRoutes from './Components/AllRoutes';
 
@@ -14,8 +13,11 @@ function App() {
     <div className="App">
      <Navbar/>
      <AllRoutes/>
-     {/* <Search/> */}
-     
+     {/* <Home/> */}
+     {/* <SignUp/> */}
+     {/* <Login/> */}
+     {/* <Feature/> */}
+     {/* <AfterFeature/> */}
     </div>
   );
 }
