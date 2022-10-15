@@ -1,6 +1,5 @@
 import "./AfterFeature.css"
 import Card2 from "./Card2"
-import {Link} from "react-router-dom"
 let arr=[
   {title:"keyword search",
 des:"Find the best keywords to supercharge your digital marketing strategy. Discover the organic and advertising value of any keyword based on search volume, intent, keyword difficulty, number of results, CPC, competition level, SERP Features, variations, and more.",
@@ -33,7 +32,7 @@ function AfterFeature() {
   <div className="afterDiv">
     <h1>Semsush Keyword Research</h1>
     <p>Boost your traffic and conquer the SERPs with Semrush's <span>keyword research </span>tools</p>
-   <Link to="/search"> <button>Start Now</button></Link>
+    <button>Start Now</button>
    </div>
    
    <div className="grid-box">
