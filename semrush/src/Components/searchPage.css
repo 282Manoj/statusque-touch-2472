@@ -1,0 +1,41 @@
+.overview{
+    /* border:1px solid red; */
+    width:50%;
+    margin-left:300px;
+    text-align: center;
+}
+.input-box{
+    /* border:1px solid red; */
+    width: 50%;
+    margin:300px;
+    text-align: center;
+    margin-top:10px;
+}
+.input-box>input{
+    margin-top: 10px;
+    width:400px;
+    height:40px;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-left:2px;
+    outline:none;
+    border: 1px solid gray;
+}
+.input-box>button{
+    width:100px;
+    height:42px;
+    border-radius: 8px;
+    background-color: #60c3b0;
+    border:transparent;
+    color:white;
+}
+.input-box>p{
+    text-align: left;
+    margin-top: -3px;
+    /* border: 1px solid red; */
+    margin-left:46px;
+}
+.side{
+    width:18%;
+    border-right:1px solid gray;
+}
