@@ -1,5 +1,6 @@
 # Semrush.com
 
+Semrush is the online visibility management and content marketing SaaS platform.
 
 ## Demo
 
